@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ff61d2, #fe9090, #fac4c4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 350px;
+  max-width: 100%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff6b6b;
+}
+
+.result-container {
+  background-color: #4ecdc4;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.result-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+  color: #fff;
+  font-size: 18px;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-large {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #ff6b6b;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-large:hover {
+  background-color: #ff8585;
+  transform: translateY(-2px);
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 6px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #ff6b6b;
+}
+
+
+input[type="number"] {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+
