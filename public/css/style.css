@@ -42,14 +42,25 @@ h2 {
   transition: all 0.3s ease;
 }
 
+#result:active{
+  animation: big 0.7s ease;
+}
+@keyframes big {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+  
+}
 .result-container:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+  
 }
 
 #result {
   color: #fff;
-  font-size: 18px;
+  font-size: 18px; 
 }
 
 .btn {
@@ -85,6 +96,7 @@ h2 {
 .setting {
   display: flex;
   justify-content: space-between;
+  padding: 10px 0;
   align-items: center;
   margin: 15px 6px;
 }

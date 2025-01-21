@@ -43,13 +43,16 @@ function generatePassword(options, length) {
 
   return password; // Retourne le mot de passe généré
 }
-// Lorsque l'utilisateur clique sur le bouton pour copier le mot de passe
+
+
+// Lorsque l'utilisateur clique sur le bouton "Copier dans le presse-papier"
 clipboard.addEventListener('click', () => {
-    if (result.innerText) { // Si le mot de passe est généré on affiche le mot de passe 
-      navigator.clipboard.writeText(result.innerText); // Copie le mot de passe dans le presse-papiers
-      alert('Mot de passe copié'); // Affiche un message de confirmation
-    }
-  });
+  // Copie le mot de passe dans le presse-papier grâce à la fonction navigator.clipboard.writeText
+  navigator.clipboard.writeText(result.innerText);
+
+  // Affiche un message de confirmation
+  alert('Mot de passe copié dans le presse-papier');
+});
   
   reset.addEventListener('click', () => {
     // pour réinitailiser le mot de passe 
